@@ -1,0 +1,16 @@
+.logoWebu {
+    width: 10%;
+    height: auto;
+}
+
+.mainHeaderBanner {
+    background-color: #e5ebff;
+}
+
+.navbar {
+    background: #687598;
+}
+
+:root {
+    --bs-emphasis-color-rgb: 255,255,255 !important;
+}
