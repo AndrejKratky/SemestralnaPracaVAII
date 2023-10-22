@@ -59,3 +59,18 @@
 .list-group-item:hover {
     background-color: #fff7e9;
 }
+
+.card-img-top {
+    width: 50%;
+    height: auto;
+}
+
+.card {
+    width: 50%
+}
+
+.hlavnaNavigacia .nav-link {
+    color: #0d3dbd;
+    font-size: 20px;
+    font-weight: bolder;
+}
