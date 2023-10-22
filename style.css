@@ -9,8 +9,53 @@
 
 .navbar {
     background: #687598;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+.hlavnaNavigacia {
+    position: sticky;
+    top: 65px;
+}
+
+.nav-item:hover {
+    box-shadow: 0 2px 0 white;
+    cursor: pointer;
+}
+
+.footer .col:hover {
+    box-shadow: 0 2px 0 white;
+    cursor: pointer;
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: #687598;
+    position: static;
+    bottom: 0;
 }
 
 :root {
-    --bs-emphasis-color-rgb: 255,255,255 !important;
+    --bs-emphasis-color-rgb: 255,255,255;
+    --bs-body-bg: #fff5db;
+    --bs-body-font-family: "Calibri", "Arial", sans-serif;
+}
+
+#novinky::before,
+#prispevky::before,
+#diskusie::before {
+    content: "";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.list-group-item:hover {
+    background-color: #fff7e9;
 }

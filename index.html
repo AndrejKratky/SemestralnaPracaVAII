@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <title>URemote</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="/images/ikonaWebu.png"/>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--BANNER-->
     <div class="container-fluid d-flex justify-content-center align-items-center mainHeaderBanner">
         <img src="/images/logo.png" class="img-fluid logoWebu" alt="logo">
     </div>
 
+    <!--NAV-->
     <nav class="navbar navbar-expand-lg mainNav">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,15 +30,100 @@
                         <a class="nav-link active" aria-current="page" href="#">Domov</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Prehľadaj Knižnicu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Predplatné</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Zadaj hľadaný titulok..." aria-label="Search">
+                        <button type="button" class="btn btn-outline-light">Hľadaj</button>
+                    </form>
+                    <li class = "nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Moja Knižnica</a>
+                    </li>
+                    <li class = "nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Prihlásenie</a>
                     </li>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Hľadaj</button>
-                    </form>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!--CONTENT-->
+    <!--
+    novinky
+    prispevky
+    diskusie
+    -->
+    <div class="container m-2">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav flex-column list-group hlavnaNavigacia">
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#novinky">Novinky</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#prispevky">Príspevky</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#diskusie">Diskusie</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--
+            <ul class="list-group">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+              <li class="list-group-item">And a fifth one</li>
+            </ul>
+            -->
+
+            <div class="col-md-9">
+                <div id="novinky">
+                    <h2>NOVINKY</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores doloribus esse, labore laudantium mollitia placeat! A ab amet animi blanditiis consequuntur cumque dolores doloribus earum eligendi est facere facilis hic, ipsa iusto labore minima necessitatibus nemo non optio perferendis porro qui quisquam sed temporibus unde vel vero voluptates. Magnam.</p>
+                </div>
+
+                <div id="prispevky">
+                    <h2>PRÍSPEVKY</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio exercitationem odit quisquam, ratione reprehenderit repudiandae sint. Architecto aspernatur atque dicta, dolor ex illum magnam mollitia nobis optio placeat quo quos reprehenderit rerum sequi sint. Aut doloribus earum error excepturi, fuga labore laudantium, maiores minima nemo optio repellat similique unde voluptates.</p>
+                </div>
+
+                <div id="diskusie">
+                    <h2>DISKUSIE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto dignissimos dolorem impedit incidunt, molestiae numquam perferendis porro recusandae repudiandae unde veniam, vero! Alias eveniet exercitationem itaque mollitia numquam perferendis praesentium quam quasi, quia quod ratione sequi similique tempore! A ad est incidunt inventore mollitia omnis velit. A, aperiam aut beatae cupiditate debitis, dignissimos dolorum eum excepturi iure laudantium, molestiae natus neque non nostrum pariatur quaerat temporibus! Ad aliquid aspernatur atque aut deleniti dolore doloremque error inventore ipsam neque non obcaecati optio pariatur, reiciendis repellat repudiandae sit tempore tenetur vel vero. Asperiores enim exercitationem facere molestias numquam quisquam recusandae sint suscipit ut voluptatum. Accusamus accusantium aliquid asperiores aspernatur at debitis deserunt dolorem dolorum eos error illo, itaque minima nihil numquam odio quidem quo quos repellat sapiente sit ut vel vero. A ad amet consectetur delectus dolore doloremque, ea eius eligendi ex exercitationem facere fugit hic in inventore ipsa ipsam libero maxime minima nobis, officia officiis omnis optio perferendis perspiciatis porro possimus quas rem repellendus soluta vel velit veritatis vero voluptatibus. Ad adipisci atque aut, beatae commodi consequuntur corporis distinctio dolor dolorum est ex excepturi explicabo facere iusto perferendis possimus quam quibusdam quod, recusandae reprehenderit sed sit unde voluptas. Aperiam earum facere magni nisi, officia velit. Aliquid assumenda dolorum ducimus itaque officiis, quibusdam? Accusantium, amet asperiores aspernatur, corporis doloribus explicabo harum ipsam iste itaque magni modi molestias nisi nostrum perferendis repellat sunt voluptatem. Accusantium animi autem consequatur dicta expedita minima nam quas tempora. Animi cupiditate dicta dolore excepturi fugit ipsum, laboriosam nesciunt optio quidem quos rem reprehenderit suscipit, vitae voluptatem voluptatum. Ab accusantium animi architecto asperiores aut consectetur consequatur consequuntur cum dolorum eius enim eveniet facere fugiat inventore iusto labore laudantium magni molestiae nisi nobis nulla, obcaecati officiis perferendis perspiciatis possimus qui quis quisquam quod quos, reprehenderit veniam vitae voluptatem voluptatum? Adipisci alias assumenda at, blanditiis corporis, delectus dolor ducimus eaque earum eligendi ex explicabo in ipsum itaque iusto laboriosam libero magnam maiores minus modi molestiae odio odit, perspiciatis quam qui quisquam ratione repellendus saepe sint sit tempore tenetur ut vitae? Eaque fuga illo neque omnis optio saepe totam voluptatem. Cupiditate, delectus distinctio, earum eum exercitationem, explicabo inventore labore modi perferendis perspiciatis quam ratione ut. Accusamus ad asperiores assumenda atque aut corporis cupiditate dolore doloremque dolorum eligendi et eum fuga illum in ipsa magni, maiores maxime modi natus nemo nisi non omnis optio possimus praesentium quas quasi quo recusandae repellat saepe soluta veritatis vitae voluptates! Nostrum optio, quibusdam. Amet atque dolorem excepturi fuga magni provident quas. Ab at atque cumque earum eos illo in non numquam, pariatur perspiciatis quas quo repellat repellendus sit, tempora ut velit vitae! Consequatur eveniet illo illum impedit in molestiae repellendus similique tenetur. Atque debitis dolores magnam quas voluptate? Animi assumenda deserunt dolorem ea eaque error ipsam labore magni maiores nihil, similique tempore voluptatum. Accusantium aperiam asperiores at atque commodi corporis cum deserunt, dolore eaque earum est explicabo illum ipsam ipsum iure, magni maiores modi mollitia natus nemo nisi nostrum odit omnis, optio perspiciatis praesentium quas quod ratione rem similique sunt tenetur totam vitae. A, amet consectetur dolore doloribus eligendi hic impedit ipsa itaque, quia quo reiciendis repellendus similique sint! Adipisci at consequuntur deleniti ex fuga iusto laudantium, magnam nostrum quia reiciendis sit voluptates voluptatum. Aperiam blanditiis commodi culpa dolor ea eos eum fugit ipsam libero modi quod totam ullam velit, voluptatem voluptatum. Est, harum libero mollitia quod rem voluptatibus. Cum eligendi impedit ipsa iusto perspiciatis possimus quibusdam quos sed! Cum eum facere illum incidunt ipsum minus nemo nostrum numquam sapiente, velit! Aliquam aspernatur autem debitis deleniti, dolor doloribus hic in magni, nemo neque pariatur, qui temporibus totam? Ad aliquam aspernatur beatae consectetur corporis culpa cumque deserunt dolore ducimus esse facilis fugiat hic, id illum in iste iusto libero molestias nemo nobis omnis pariatur placeat possimus quasi, quis, quisquam quod quos repellendus rerum ut. Consequatur cupiditate ducimus earum eius in itaque nesciunt, non, odit pariatur possimus quibusdam rerum, vitae voluptates. Magnam, quam, tempore. Aliquam cum, soluta. Dolor eos labore magni minima nesciunt non nostrum, recusandae unde voluptas voluptatem. Animi eligendi hic molestiae obcaecati quis sed soluta totam voluptatem? Adipisci, animi architecto deleniti doloribus earum eius, explicabo id minima molestiae odit quo suscipit unde voluptate. Alias, aliquam consequuntur illum laudantium odio placeat praesentium velit vero voluptatem. Atque consectetur dicta illum placeat rem! Atque dignissimos, dolorum eius esse laboriosam mollitia nostrum officia pariatur recusandae sequi suscipit tempora, ut, vel? Accusamus adipisci autem cupiditate dicta dolore, itaque iusto laboriosam molestias nisi, praesentium quam quod, soluta veniam voluptate voluptatem? Adipisci architecto id nam nulla odit qui ullam voluptatum! Autem corporis distinctio laboriosam laudantium non nulla quaerat? Accusantium atque consequatur consequuntur cupiditate, deserunt dicta dolor eaque eos est eveniet maxime minus officia quia reiciendis repudiandae sint veritatis. Assumenda, deleniti eius eos explicabo fugit ipsum iure mollitia nesciunt non nulla recusandae reiciendis repudiandae sed. Aperiam consectetur consequuntur cupiditate deleniti dicta, dolore earum, esse eum ipsam iste iure laboriosam laudantium molestias nobis optio possimus quaerat recusandae, sequi sit voluptatibus. Adipisci autem delectus et facilis impedit magni modi, necessitatibus nobis porro ratione sapiente sunt, ullam vero! Accusamus dicta, dignissimos esse excepturi incidunt iusto laborum quisquam quo. Accusantium amet dicta eligendi numquam repellendus. Autem error illum impedit ipsum iusto nulla numquam provident quod saepe. Aperiam aut explicabo laudantium libero placeat quaerat qui reiciendis! A dicta dignissimos eaque explicabo fugiat laborum, reprehenderit soluta sunt! Consequatur consequuntur, deleniti ea molestiae nisi non quibusdam sapiente sequi! Alias aspernatur aut consectetur culpa cupiditate distinctio dolorem ducimus est ipsum itaque laudantium magnam maxime minima minus nemo nesciunt, nihil odio, perferendis provident quae quas ratione recusandae reiciendis, rem repellat reprehenderit sapiente sed tempore velit voluptate! Cumque exercitationem incidunt inventore, modi nobis quidem velit? Deleniti exercitationem facere nostrum officiis pariatur possimus qui quod reprehenderit sunt voluptate! Aut deserunt dignissimos distinctio itaque iusto quo soluta? Amet atque quas sit! Dicta dolorum exercitationem expedita quam quasi. A consequuntur debitis, dolor dolorem illo, neque possimus quaerat quasi qui quisquam recusandae, sed voluptas voluptatem. Architecto commodi excepturi exercitationem facere, illum ipsam libero natus, nisi officiis placeat sint!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--FOOTER-->
+    <div class="container-fluid footer">
+        <div class="row footerItem">
+            <div class="col">
+                Kontakt
+            </div>
+            <div class="col footerItem">
+                Technická Pomoc
+            </div>
+        </div>
+    </div>
+
+    <!--
+    About Us: Information about your website, your mission, and who is behind it.
+    Contact: A link to your contact page or a form for users to get in touch with any questions or issues.
+    Help/Support: A section for user support, including tutorials, troubleshooting guides, and contact options for customer service.
+    Blog/News: If you plan to have a blog or news section, include a link to it in the header.
+    Terms & Conditions/Privacy Policy: Links to these important legal documents, usually placed in the footer but sometimes added to the header for quick reference.
+    -->
+
 </body>
 </html>
