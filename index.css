@@ -108,8 +108,8 @@ body {
     background-color: green;
 }
 
-.hlavnaStrankaObrazky {
-    width: 80%;
+#oNasObr {
+    max-width: 80%;
     height: auto;
 }
 
@@ -146,4 +146,32 @@ body {
 
 .planColumn > * {
     flex-grow: 1;
+}
+
+@media (max-width: 576px) {  /* Bootstrap SM screen */
+    #novinky img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {  /* Bootstrap MD screen */
+    .hlavnaNavigacia {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {  /* Bootstrap LG screen */
+    #novinky img {
+        width: 20vw;
+    }
+
+    #oNasObr {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) { /* Bootstrap XL screen */
+    #textStudentPlan {
+        display: none;
+    }
 }
