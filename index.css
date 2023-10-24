@@ -31,11 +31,24 @@ body {
 .hlavnaNavigacia {
     position: sticky;
     top: 65px;
-    border: 1px solid black;
+    animation-name: nabehZlava;
+    animation-duration: 1s;
 }
 
-.hlavnaNavigaciaItem {
-    border: 1px solid black;
+.hlavnaNavigacia .list-group-item {
+    background-color: rgba(255,255,255,0);
+    border: none;
+    border-radius: 0;
+}
+
+.hlavnaNavigacia .nav-link {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.list-group-item:hover {
+    background-color: #fff9f1;
 }
 
 .nav-item:hover {
@@ -75,21 +88,11 @@ body {
     pointer-events: none;
 }
 
-.list-group-item:hover {
-    background-color: #fff9f1;
-}
-
 #novinky img {
     max-width: 70%;
     height: auto;
     display: flex;
     object-fit: contain;
-}
-
-.hlavnaNavigacia .nav-link {
-    color: #0d3dbd;
-    font-size: 20px;
-    font-weight: bolder;
 }
 
 .popisTituluNovinky {
@@ -173,5 +176,19 @@ body {
 @media (max-width: 1200px) { /* Bootstrap XL screen */
     #textStudentPlan {
         display: none;
+    }
+}
+
+@keyframes nabehZlava {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
