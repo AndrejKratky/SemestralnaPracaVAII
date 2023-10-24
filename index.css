@@ -63,8 +63,10 @@ body {
 }
 
 #novinky::before,
-#prispevky::before,
-#diskusie::before {
+#oNas::before,
+#spatnaVazba::before,
+#predplatne::before
+{
     content: "";
     display: block;
     height: 60px;
@@ -77,13 +79,7 @@ body {
     background-color: #fff9f1;
 }
 
-.card {
-    width: 100%;
-    height: auto;
-    background-color: #e4eaf6;
-}
-
-.card-image {
+#novinky img {
     max-width: 70%;
     height: auto;
     display: flex;
