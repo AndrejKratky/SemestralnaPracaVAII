@@ -64,57 +64,49 @@ body {
     font-weight: bolder;
 }
 
-.btn {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+.table {
+    table-layout: auto;
 }
 
-.btn:hover {
-    background-color: #cdd6ff;
+.table th {
+    background-color: #ffe8cb;
 }
 
-.card .btn {
-    max-width: 80%;
-    height: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 0;
+.table td {
+    background-color: #ffe8cb;
 }
 
-.card .btn:hover {
-    background-color: green;
-}
-
-.scrollable {
-    max-height: calc(100vh - 325px);
-    overflow-y: auto;
-}
-
-.card {
+.bookThumbnail {
+    width: 75%;
     height: auto;
 }
 
-.card .img-fluid {
-    width: auto;
-    height: inherit;
+.bookInfoContainer {
+    background-color: #fff9f1;
 }
 
-.form-label {
-    font-size: 1.3rem;
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 2rem;
+}
+
+#backToTopBtn:hover {
+    background-color: #333;
 }
 
 @media (max-width: 576px) {
-    .card .btn .bi {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .scrollable {
-        height: 70vh;
-        margin-bottom: 100px;
-    }
-
-    #prehladajKniznicuLabel {
-        margin-top: 50px;
+    .table td {
+        white-space: normal !important;
     }
 }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>URemote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/ikonaWebu.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="podrobnostiKnihy.css">
+</head>
+<body>
+<!--BANNER-->
+<div class="container-fluid mainHeaderBanner">
+    <img src="images/logoText.png" class="img-fluid logoWebu" alt="logo">
+</div>
+
+<!--NAV-->
+<nav class="navbar navbar-expand-lg mainNav">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Domov</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="prehladavacKnih.html">Prehľadaj Knižnicu</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                <li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 hladajTitulokLabel" type="search" placeholder="Zadaj názov hľadaného titulku..." aria-label="Search">
+                        <button type="button" class="btn btn-outline-light">Hľadaj</button>
+                    </form>
+                </li>
+                <li class = "nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Moja Knižnica</a>
+                </li>
+                <li class = "nav-item">
+                    <a class="nav-link active" aria-current="page" href="prihlasovanie.html">Prihlásenie</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Content-->
+<div class="container-fluid">
+    <div class="row pt-3">
+        <div class="col-md-4 text-center mb-5">
+            <img src="images/bookThumbnails/kniha1.jpg" alt="Book Cover" class="bookThumbnail">
+        </div>
+
+        <div class="col-md-8">
+            <div class="p-5 border rounded bookInfoContainer">
+                <h2>Civilná ochrana a riešenie krízových javov</h2>
+                <table class="table border border-light">
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-nowrap">Autor(i)</th>
+                            <td class="text-nowrap">Jozef Kubás, Mária Polorecká, Patrik Mitrenga</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-nowrap">Rok vydania</th>
+                            <td class="text-nowrap">2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-nowrap">Fakulta / útvar</th>
+                            <td class="text-nowrap">FBI</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-nowrap">Počet strán</th>
+                            <td class="text-nowrap">324</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Problematika civilnej ochrany a krízových javov je veľmi aktuálna, avšak venuje sa jej málo knižných publikácií a je pomerne málo propagovaná medzi širokou verejnosťou. Aj to bol dôvod vzniku vysokoškolskej učebnice, ktorá zjednocuje a prehľadne prezentuje civilnú ochranu v kontexte krízového manažmentu, ako aj samotné postupy na riešenie krízových javov. V učebnici sú logicky a metodicky usporiadané informácie o civilnej ochrane, krízovom manažmente a integrovanom záchrannom systéme v prostredí Slovenskej republiky. Následne približuje problematiku environmentálnych a prírodných krízových javov a poskytuje základné informácie o možnostiach ich riešenia. Približuje tiež špecifikácie vzniknutých situácií a očakávané zvláštnosti, ktoré sa môžu vyskytnúť pri riešení udalosti.
+                </p>
+                <p>
+                    Publikácia je určená študentom Žilinskej univerzity, Fakulty bezpečnostného inžinierstva, ale aj širokej odbornej verejnosti. Je možné ju považovať za zdroj informácií pre obyvateľov, subjekty ohrozené mimoriadnymi udalosťami, ako aj pre krízových manažérov pôsobiacich vo verejnej správe a miestnej územnej samospráve. Informácie obsiahnuté v publikácii je možné využiť v rámci mnohých odvetví, najmä však v oblasti krízového manažmentu, civilnej ochrany obyvateľstva a jeho prípravy na sebaochranu a vzájomnú pomoc, reakcie na mimoriadne udalosti, prevencie závažných priemyselných havárií či požiarnej prevencie.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="user-reviews p-5 mb-5">
+                <h3>Recenzie čitateľov</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TOP BUTTON -->
+<button id="backToTopBtn"><i class="bi bi-arrow-up-circle"></i></button>
+
+<!--FOOTER-->
+<div class="container-fluid footer">
+    <div class="row footerItem">
+        <div class="col">
+            Kontakt
+        </div>
+        <div class="col footerItem text-nowrap">
+            Technická Pomoc
+        </div>
+    </div>
+</div>
+
+<script src="podrobnostiKnihy.js"></script>
+</body>
+</html>

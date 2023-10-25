@@ -17,10 +17,12 @@ function removeAuthor() {
 }
 
 const vyberRok = document.getElementById('rokVydania');
-let aktualnyRok = new Date().getFullYear();
-for (let rok = aktualnyRok; rok >= 1970; rok--) {
-    const volbaRoku = document.createElement('option');
-    volbaRoku.value = rok.toString();
-    volbaRoku.textContent = rok.toString();
-    vyberRok.appendChild(volbaRoku);
+if (vyberRok) {
+    let aktualnyRok = new Date().getFullYear();
+    for (let rok = aktualnyRok; rok >= 1970; rok--) {
+        const volbaRoku = document.createElement('option');
+        volbaRoku.value = rok.toString();
+        volbaRoku.textContent = rok.toString();
+        vyberRok.appendChild(volbaRoku);
+    }
 }
