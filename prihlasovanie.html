@@ -51,9 +51,9 @@
     </nav>
 
     <!--Content-->
-    <div class="container mt-5 logginContainer">
+    <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-6 loginContent">
                 <div class="card">
                     <div class="card-body">
                         <h2 class="text-center mb-4 loginText">Login</h2>
@@ -68,18 +68,22 @@
                                 <input type="password" id="password" name="password" class="form-control" required>
                             </div>
 
-                            <div class="row">
+                            <div class="row d-none d-sm-flex">
                                 <div class="col"></div>
-                                <div class="col d-flex justify-content-center">
+                                <div class="col"></div>
+                                <div class="col d-flex justify-content-center text-nowrap">
                                     Nemáte účet?
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col d-flex justify-content-center">
+                                <div class="col-12 col-sm-4 d-flex justify-content-center">
                                     <button type="submit" class="btn btn-light">Prihlásenie</button>
                                 </div>
-                                <div class="col d-flex justify-content-center">
+                                <div class="col-12 col-sm-4 d-flex justify-content-center">
+                                    <a href="index.html" id="zabudnuteHesloHyperLink" class="text-nowrap">Zabudli ste heslo?</a>
+                                </div>
+                                <div class="col-12 col-sm-4 d-flex justify-content-center">
                                     <button type="submit" class="btn btn-light">Registrácia</button>
                                 </div>
                             </div>
@@ -96,7 +100,7 @@
             <div class="col">
                 Kontakt
             </div>
-            <div class="col footerItem">
+            <div class="col footerItem text-nowrap">
                 Technická Pomoc
             </div>
         </div>
